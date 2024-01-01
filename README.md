@@ -1,6 +1,6 @@
 # Nextjs Tailwind ECommerce Website Like Amazon
 
-Decription
+decription
 
 ## Lessons
 
@@ -33,13 +33,11 @@ Decription
    5. create store provider
    6. handle add to cart button
 9. Create Cart Page
-
    1. create cart.js
    2. use context to get cart items
    3. list items in cart items
    4. redirect to cart screen after add to cart
-
-10. Update Quanity In The Cart
+10. Update Quantity In The Cart
     1. add select box for quantity
     2. handle select box change
 11. Save Cart Items
@@ -71,6 +69,9 @@ Decription
     1. dispaly payment methods
     2. save payment method in context
 18. Seed sample products
-    1. insert sample products to mongodb
-    2. load products from db in home and product screen
-    3. check product count in stock in add to cart
+    1. create product model in mongoose
+    2. insert sample products to mongodb
+19. Load Products MongoDB
+    1. load products in home page from mongodb
+    2. load products in product page from mongodb
+    3. use product api to check count in stock in add to cart
