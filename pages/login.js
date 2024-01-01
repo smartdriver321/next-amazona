@@ -9,7 +9,6 @@ import { useRouter } from 'next/router';
 
 export default function LoginScreen() {
   const { data: session } = useSession();
-
   const router = useRouter();
   const { redirect } = router.query;
 
@@ -24,6 +23,7 @@ export default function LoginScreen() {
     register,
     formState: { errors },
   } = useForm();
+
   const submitHandler = async ({ email, password }) => {
     try {
       const result = await signIn('credentials', {
@@ -85,7 +85,7 @@ export default function LoginScreen() {
         </div>
         <div className='mb-4 '>
           Don&apos;t have an account? &nbsp;
-          <Link href='register'>Register</Link>
+          <Link href='/register'>Register</Link>
         </div>
       </form>
     </Layout>
