@@ -1,10 +1,10 @@
-import Layout from '@/components/Layout';
-import { Store } from '@/utils/Store';
-import { useRouter } from 'next/router';
 import React, { useContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import { useRouter } from 'next/router';
 import Cookies from 'js-cookie';
 import CheckoutWizard from '@/components/CheckoutWizard';
+import Layout from '@/components/Layout';
+import { Store } from '@/utils/Store';
 
 export default function PaymentScreen() {
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');

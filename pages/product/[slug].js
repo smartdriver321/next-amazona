@@ -1,13 +1,13 @@
-import Layout from '@/components/Layout';
-import Product from '@/models/Product';
-import { Store } from '@/utils/Store';
-import db from '@/utils/db';
-import axios from 'axios';
+import React, { useContext } from 'react';
+import { toast } from 'react-toastify';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useContext } from 'react';
-import { toast } from 'react-toastify';
+import axios from 'axios';
+import Layout from '@/components/Layout';
+import Product from '@/models/Product';
+import db from '@/utils/db';
+import { Store } from '@/utils/Store';
 
 export default function ProductScreen(props) {
   const { product } = props;

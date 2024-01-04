@@ -1,12 +1,12 @@
-import { signOut, useSession } from 'next-auth/react';
-import Head from 'next/head';
-import Link from 'next/link';
 import React, { useContext, useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Store } from '@/utils/Store';
 import { Menu } from '@headlessui/react';
+import Head from 'next/head';
+import Link from 'next/link';
+import { signOut, useSession } from 'next-auth/react';
 import Cookies from 'js-cookie';
+import { Store } from '@/utils/Store';
 import DropdownLink from './DropdownLink';
 
 export default function Layout({ title, children }) {

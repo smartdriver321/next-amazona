@@ -1,13 +1,13 @@
-import Layout from '@/components/Layout';
+import React, { useContext } from 'react';
+import { toast } from 'react-toastify';
+import { XCircleIcon } from '@heroicons/react/outline';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useContext } from 'react';
-import { XCircleIcon } from '@heroicons/react/outline';
-import { Store } from '@/utils/Store';
-import dynamic from 'next/dynamic';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+import Layout from '@/components/Layout';
+import { Store } from '@/utils/Store';
 
 function CartScreen() {
   const router = useRouter();
